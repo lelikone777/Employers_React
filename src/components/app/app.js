@@ -7,6 +7,7 @@ import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
+import logo from '../../logo.svg';
 
 class App extends Component {
     constructor(props) {
@@ -96,6 +97,11 @@ class App extends Component {
 
         return (
             <div className="app">
+                <img src={logo} alt=""
+                 style={{'max-width': '33%',
+                         'margin': '0 auto',
+                         'display': 'block'}}
+                />
                 <AppInfo employees={employees} increased={increased}/>
 
                 <div className="search-panel">
