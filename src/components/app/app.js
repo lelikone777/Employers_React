@@ -7,7 +7,10 @@ import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
-import logo from '../../logo.svg';
+import logo from './../../logo.svg';
+
+
+
 
 class App extends Component {
     constructor(props) {
@@ -32,7 +35,6 @@ class App extends Component {
         })
     }
 
-    // Да, пока могут добавляться пустые пользователи. Мы это еще исправим
     addItem = (name, salary) => {
         const newItem = {
             name,
